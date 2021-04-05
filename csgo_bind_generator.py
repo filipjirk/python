@@ -638,45 +638,45 @@ class CsgoBindGenerator(QMainWindow):
 		self.hand_switch.clicked.connect(self.hand_switch_clicked)
 		self.copy.clicked.connect(self.copy_clicked)
 
-		self.ak47.clicked.connect(lambda: self.gear_clicked('"buy ak47; buy m4a1;"'))
-		self.m4s.clicked.connect(lambda: self.gear_clicked('"buy m4a1; buy ak47;"'))
-		self.vest.clicked.connect(lambda: self.gear_clicked('"buy vest;"'))
-		self.vest_helmet.clicked.connect(lambda: self.gear_clicked('"buy vesthelm;"'))
-		self.defuse_kit.clicked.connect(lambda: self.gear_clicked('"buy defuser;"'))
-		self.double_flash.clicked.connect(lambda: self.gear_clicked('"buy flashbang; buy flashbang;"'))
+		self.ak47.clicked.connect(lambda: self.gear_clicked('"buy ak47; buy m4a1";'))
+		self.m4s.clicked.connect(lambda: self.gear_clicked('"buy m4a1; buy ak47";'))
+		self.vest.clicked.connect(lambda: self.gear_clicked('"buy vest";'))
+		self.vest_helmet.clicked.connect(lambda: self.gear_clicked('"buy vesthelm";'))
+		self.defuse_kit.clicked.connect(lambda: self.gear_clicked('"buy defuser";'))
+		self.double_flash.clicked.connect(lambda: self.gear_clicked('"buy flashbang; buy flashbang";'))
 
-		self.flash.clicked.connect(lambda: self.gear_clicked('"buy flashbang;"'))
-		self.smoke.clicked.connect(lambda: self.gear_clicked('"buy smokegrenade;"'))
-		self.nade.clicked.connect(lambda: self.gear_clicked('"buy hegrenade;"'))
-		self.inc_grenade.clicked.connect(lambda: self.gear_clicked('"buy incgrenade; buy molotov;"'))
-		self.molotov.clicked.connect(lambda: self.gear_clicked('"buy molotov; buy incgrenade;"'))
+		self.flash.clicked.connect(lambda: self.gear_clicked('"buy flashbang";'))
+		self.smoke.clicked.connect(lambda: self.gear_clicked('"buy smokegrenade";'))
+		self.nade.clicked.connect(lambda: self.gear_clicked('"buy hegrenade";'))
+		self.inc_grenade.clicked.connect(lambda: self.gear_clicked('"buy incgrenade; buy molotov";'))
+		self.molotov.clicked.connect(lambda: self.gear_clicked('"buy molotov; buy incgrenade";'))
 
-		self.awp.clicked.connect(lambda: self.gear_clicked('"buy awp;"'))
-		self.deagle.clicked.connect(lambda: self.gear_clicked('"buy deagle; buy revolver;"'))
+		self.awp.clicked.connect(lambda: self.gear_clicked('"buy awp";'))
+		self.deagle.clicked.connect(lambda: self.gear_clicked('"buy deagle; buy revolver";'))
 
-		self.aug.clicked.connect(lambda: self.gear_clicked('"buy aug; buy sg556;"'))
-		self.sg.clicked.connect(lambda: self.gear_clicked('"buy sg556; buy aug;"'))
-		self.galil.clicked.connect(lambda: self.gear_clicked('"buy galilar; buy famas;"'))
-		self.famas.clicked.connect(lambda: self.gear_clicked('"buy famas; buy galilar;"'))
-		self.ssg.clicked.connect(lambda: self.gear_clicked('"buy ssg08;"'))
+		self.aug.clicked.connect(lambda: self.gear_clicked('"buy aug; buy sg556";'))
+		self.sg.clicked.connect(lambda: self.gear_clicked('"buy sg556; buy aug";'))
+		self.galil.clicked.connect(lambda: self.gear_clicked('"buy galilar; buy famas";'))
+		self.famas.clicked.connect(lambda: self.gear_clicked('"buy famas; buy galilar";'))
+		self.ssg.clicked.connect(lambda: self.gear_clicked('"buy ssg08";'))
 		
-		self.fiveseven.clicked.connect(lambda: self.gear_clicked('"buy fiveseven; buy tec9;"'))
-		self.tec9.clicked.connect(lambda: self.gear_clicked('"buy tec9; buy fiveseven;"'))
-		self.p250.clicked.connect(lambda: self.gear_clicked('"buy p250;"'))
-		self.cz75.clicked.connect(lambda: self.gear_clicked('"buy fiveseven; buy tec9;"'))
-		self.revolver.clicked.connect(lambda: self.gear_clicked('"buy revolver; buy deagle;"'))
+		self.fiveseven.clicked.connect(lambda: self.gear_clicked('"buy fiveseven; buy tec9";'))
+		self.tec9.clicked.connect(lambda: self.gear_clicked('"buy tec9; buy fiveseven";'))
+		self.p250.clicked.connect(lambda: self.gear_clicked('"buy p250";'))
+		self.cz75.clicked.connect(lambda: self.gear_clicked('"buy fiveseven; buy tec9";'))
+		self.revolver.clicked.connect(lambda: self.gear_clicked('"buy revolver; buy deagle";'))
 
-		self.mac10.clicked.connect(lambda: self.gear_clicked('"buy mac10; buy mp9;"'))
+		self.mac10.clicked.connect(lambda: self.gear_clicked('"buy mac10; buy mp9";'))
 		self.mp9.clicked.connect(lambda: self.gear_clicked('"buy mp9; buy mac10";'))
-		self.mp7.clicked.connect(lambda: self.gear_clicked('"buy mp7;"'))
-		self.ump.clicked.connect(lambda: self.gear_clicked('"buy ump;"'))
-		self.p90.clicked.connect(lambda: self.gear_clicked('"buy p90;"'))
+		self.mp7.clicked.connect(lambda: self.gear_clicked('"buy mp7";'))
+		self.ump.clicked.connect(lambda: self.gear_clicked('"buy ump";'))
+		self.p90.clicked.connect(lambda: self.gear_clicked('"buy p90";'))
 
-		self.mp5.clicked.connect(lambda: self.gear_clicked('"buy mp7;"'))
-		self.bizon.clicked.connect(lambda: self.gear_clicked('"buy bizon;"'))
-		self.mag7.clicked.connect(lambda: self.gear_clicked('"buy mag7; buy sawedoff;"'))
-		self.sawedoff.clicked.connect(lambda: self.gear_clicked('"buy sawedoff; buy mag7;"'))
-		self.xm.clicked.connect(lambda: self.gear_clicked('"buy xm1014;"'))	
+		self.mp5.clicked.connect(lambda: self.gear_clicked('"buy mp7";'))
+		self.bizon.clicked.connect(lambda: self.gear_clicked('"buy bizon";'))
+		self.mag7.clicked.connect(lambda: self.gear_clicked('"buy mag7; buy sawedoff";'))
+		self.sawedoff.clicked.connect(lambda: self.gear_clicked('"buy sawedoff; buy mag7";'))
+		self.xm.clicked.connect(lambda: self.gear_clicked('"buy xm1014"`'))	
 
 #------------------------------------------------------------------------------------------
 #------------------------------------------------------------------------------------------
@@ -716,7 +716,7 @@ class CsgoBindGenerator(QMainWindow):
 				self.action = None
 			
 			elif self.action == "hand_switch":
-				self.command += f'bind { key_value } "toggle cl_righthand 0 1;"\n'
+				self.command += f'bind { key_value } "toggle cl_righthand 0 1";\n'
 				self.commands_display.setText(self.command)
 				self.action = None
 
